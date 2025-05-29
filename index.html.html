@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Sadia's Website</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+   <body id="home">
+
+<nav>
+  <ul style="list-style:none; display:flex; justify-content:center; gap:20px; padding:0;">
+    <li><a href="#home" style="text-decoration:none; color:#00796b;">Home</a></li>
+    <li><a href="#about" style="text-decoration:none; color:#00796b;">About</a></li>
+    <li><a href="#contact" style="text-decoration:none; color:#00796b;">Contact</a></li>
+  </ul>
+</nav>
+<h1>Sadia Zia</h1>
+<p>My First Website</p>
+<img src="sadish.jpg.jpg" alt="Sadia's image">
+<blockquote style="text-align:center; font-style: italic; color: #004d40; max-width: 600px; margin: 20px auto;">
+  “passion with patience shows how much you value your goals” – Leonardo da Vinci
+</blockquote>
+<section id="about">
+  <h2>About Me</h2>
+  <p>🌸 I’m Sadia, a curious learner and tea lover!</p>
+  <p>💻 I enjoy exploring new ideas and creating fun web pages.</p>
+  <p>🌍 I believe in smiles, soft colors, and simple joys of life.</p>
+</section>
+
+<section id="fun-facts" style="max-width: 600px; margin: 30px auto; ...
+
+<section id="fun-facts" style="max-width: 600px; margin: 30px auto; background-color: #b2dfdb; border-radius: 10px; padding: 20px; color: #004d40; font-size: 1.1rem;">
+  <h2 style="text-align:center;">Fun Facts</h2>
+  <ul>
+    <li>I once tried to eat a clock — it was very time-consuming.</li>
+    
+    <li>I talk to my plants, but they haven’t responded yet.</li>
+    <li>I’m on a seafood diet — I see food and I eat it.</li>
+    <li>I tried to be normal once — worst two minutes ever!</li>
+    <li>just say"sadia your website is excellent"</li>
+    
+  </ul>
+</section>
+<!-- Only ONE button here -->
+<button onclick="typeWriter()">Click for a Surprise</button>
+<p id="surpriseText" style="text-align:center; color:#00695c; font-weight:bold; margin-top:20px; min-height: 40px;"></p>
+<script>
+  const message = "🌟  “Welcome! Grab a cup of tea” 🌟";
+  let i = 0;
+  function typeWriter() {
+    const el = document.getElementById("surpriseText");
+    el.innerHTML = "";  // Clear previous text
+    i = 0;
+    typeWriterEffect();
+    function typeWriterEffect() {
+      if (i < message.length) {
+        el.innerHTML += message.charAt(i);
+        i++;
+        setTimeout(typeWriterEffect, 100);
+      }
+    }
+  }
+</script>
+<section id="gallery">
+  <h2 style="text-align:center;">My Photography</h2>
+  <div class="gallery-container">
+    <img src="pic1.jpg" alt="Photo 1">
+    <img src="pic2.jpg" alt="Photo 2">
+    <img src="pic3.jpg" alt="Photo 3">
+    <img src="pic4.jpg" alt="Photo 4">
+    <img src="pic5.jpg" alt="Photo 5">
+    <img src="pic6.jpg" alt="Photo 6">
+  </div>
+</section>
+
+<footer>
+  <p style="text-align:center; color:#004d40; margin-top:40px;">
+    © 2025 Sadia Zia. All rights reserved.
+  </p>
+</footer>
+</body>
+</html>
